@@ -1,0 +1,16 @@
+name: test worklow
+on: workflow_dispatch
+
+jobs:
+    first_job:
+        runs-on: ubuntu_latest
+        steps:
+            - name: Print greeting
+              run: echo "hello"
+            - name: Print goodbye
+              run: echo "bye"
+
+
+
+
+
