@@ -17,7 +17,7 @@ def get_db_connection():
     return mysql.connector.connect(
         host='localhost',
         user='root',
-        password='password',
+        password='2311',
         database='user_management'
     )
 
@@ -72,4 +72,4 @@ def profile():
     return jsonify({'user': user})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,port=50000)
